@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Register Page</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+       <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .content-3-5 .btn:focus,
+      .content-3-5 .btn:active {
+        outline: none !important;
+      }
+
+      .content-3-5 .width-left {
+        width: 0%;
+      }
+
+      .content-3-5 .width-right {
+        width: 100%;
+        height: 100%;
+        padding: 8rem 2rem;
+        background-color: #fcfdff;
+      }
+
+      .content-3-5 .centered {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .content-3-5 .right {
+        width: 100%;
+      }
+
+      .content-3-5 .title-text {
+        font: 600 1.875rem/2.25rem Poppins, sans-serif;
+        margin-bottom: 0.75rem;
+      }
+
+      .content-3-5 .caption-text {
+        font: 400 0.875rem/1.75rem Poppins, sans-serif;
+        color: #a8adb7;
+      }
+
+      .content-3-5 .input-label {
+        font: 500 1.125rem/1.75rem Poppins, sans-serif;
+        color: #39465b;
+      }
+
+      .content-3-5 .div-input {
+        font: 300 1rem/1.5rem Poppins, sans-serif;
+        padding: 1rem 1.25rem;
+        margin-top: 0.75rem;
+        border-radius: 0.75rem;
+        border: 1px solid #cacbce;
+        color: #2a3240;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .div-input:focus-within {
+        border: 1px solid #2ec49c;
+        color: #2a3240;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .div-input input::placeholder {
+        color: #cacbce;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .div-input:focus-within input::placeholder {
+        color: #2a3240;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .div-input .icon-toggle-empty-3-5 path,
+      .content-3-5 .div-input:focus-within .icon path {
+        transition: 0.3;
+        fill: #2ec49c;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .input-field {
+        font: 300 1rem/1.5rem Poppins, sans-serif;
+        width: 100%;
+        background-color: #fcfdff;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .input-field:focus {
+        outline: none;
+        transition: 0.3s;
+      }
+
+      .content-3-5 .forgot-password {
+        font: 400 0.875rem/1.25rem Poppins, sans-serif;
+        color: #cacbce;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .content-3-5 .forgot-password:hover {
+        color: #2a3240;
+      }
+
+      .content-3-5 .btn-fill {
+        font: 500 1.25rem/1.75rem Poppins, sans-serif;
+        background-image: linear-gradient(rgba(91, 203, 173, 1),
+            rgba(39, 194, 153, 1));
+        padding: 0.75rem 1rem;
+        margin-top: 2.25rem;
+        border-radius: 0.75rem;
+        transition: 0.5s;
+      }
+
+      .content-3-5 .btn-fill:hover {
+        background-image: linear-gradient(#2ec49c, #2ec49c);
+        transition: 0.5s;
+      }
+
+      .content-3-5 .bottom-caption {
+        font: 400 0.875rem/1.25rem Poppins, sans-serif;
+        margin-top: 2rem;
+        color: #2a3240;
+      }
+
+      .content-3-5 .green-bottom-caption {
+        color: #2ec49c;
+        font-weight: 500;
+      }
+
+      .content-3-5 .green-bottom-caption:hover {
+        color: #2ec49c;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      @media (min-width: 576px) {
+        .content-3-5 .width-right {
+          padding: 8rem 4rem;
+        }
+
+        .content-3-5 .right {
+          width: 58.333333%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .content-3-5 .right {
+          width: 66.666667%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .content-3-5 .width-left {
+          width: 48%;
+        }
+
+        .content-3-5 .width-right {
+          width: 52%;
+        }
+
+        .content-3-5 .right {
+          width: 75%;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .content-3-5 .right {
+          width: 58.333333%;
+        }
+      }
+    </style>
+    <div class="content-3-5 d-flex flex-column align-items-center h-100 flex-lg-row"
+      style="font-family: 'Poppins', sans-serif">
+      <div class="position-relative d-none d-lg-block h-100 width-left">
+        <img class="position-absolute img-fluid centered"
+          src="http://api.elements.buildwithangga.com/storage/files/2/assets/Empty%20State/EmptyState3/Empty-3-5.png"
+          alt="" />
+      </div>
+      <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
+        <div class="right mx-lg-0 mx-auto">
+          <div class="align-items-center justify-content-center d-lg-none d-flex">
+            <img class="img-fluid"
+              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Empty%20State/EmptyState3/Empty-3-5.png"
+              alt="" />
+          </div>
+
+          <h3 class="title-text">Daftar Untuk Akun Baru</h3>
+          <p class="caption-text">
+            Silahkan Masukan Username dan Password kalian disini<br />
+            Atau Silahkan Daftar untuk Membuat user baru
+          </p>
+
+          <form style="margin-top: 1.5rem" action="" method="post">
+            <div style="margin-bottom: 1.75rem">
+              <label for="" class="d-block input-label">Username</label>
+              <div class="d-flex w-100 div-input">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABpklEQVRIie3WyWoVQRTG8V80bkxAva6yChJcieEaxIAro6CC6FM4gOjCCfERFIeN4FOIGx9BEOOAGiWKwyYBUUSNaIRs4uLUxaYxfStJJav8oaG7+qv6qqvPOVWssUr0LLHfDuxM9xN4XWY6CzOKp5jDq3TN4Qn2rJTpIcziKrZU2lu4lt4dLG26Fd9wukFzFl9rk1o2V/Coi6YHj3E5Z8B1mcb7cLeLZj5pxkoat/A5Q/cpaYsZT2EwQ7ctaYtxEm+wvkHTi7c4XtJ4Iz6ItFmI63iXtEVp44sIoF2V9hHcEzEwXNoU+nBJRO+8KBizleeLFvG1ObW6Pxmex3fcx3MRwTAgVuAINuOmWPZfuZP4HyP4iBc4mqE/hpciHtpLNd0vlvKGiNhcenELv2UWkyrD+Ilzi+1Y4QJm/Ns+u7JB/MPbyzDtcAfP0phdOSOqT18B435Ma97VEJXpPU4UMO1wShSWxvI8ij8iLUqxSQTp7mpjfRZjeIAfBY1n8BAHmoy3Y7KgaYdJDFUb6vnZwmHsLWw8oHaCqZfMtpU7LY6LNF1jdfkLqA5NvLQO13AAAAAASUVORK5CYII="/>
+                <input class="input-field border-0" type="email" name="" id="" placeholder="Your Email Address"
+                  autocomplete="on" required />
+              </div>
+            </div>
+          <form style="margin-top: 1.5rem" action="" method="post">
+            <div style="margin-bottom: 1.75rem">
+              <label for="" class="d-block input-label">Email Address</label>
+              <div class="d-flex w-150 div-input">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACvUlEQVRIieXWW4iVVRQH8N/MHHW8EYI4NnlJfUhGJ2bIzAwxQYu8pnYBUUSQiBh9UAQ1VKJHBRGkLHpwNEiQBrog6oOWUqhhqZAohT1kUPqQmmFWlA9rf87pcL4zRzw+SH84cPa39l7/tdf+r7U3/zfU1dBXf8zBk2jCVZzHx/j+XhDXYSVewUf4HBfRD+14Cb9iFX6sAR/ohb3YJnach+k4jcdqRbwdG3Js7XgHWzESYxJ5892STsIB5Y9rVCKZhgU4o1sDu6FQNHl0+lWLVdiEf8vY5uJtHE7jqUJ0n2AdmguoRycGp8jKOSpFHVpxPMd+Ac9jh9hcmzgW6MKsAhbhEpZUQZhhSHKWF+RoTMFJ9BYb+y7ZvsXTBTyOT++AFAbiRo5tpVBxK/rgT/xRZL+B/vWiJN4VYqkWv+ChHNLn8AJu4loJKYzAT/VpsFHIfkWVxNdFmoeUkM7HgxhaYe0MHM2ILwjpt2IPBlRB3omO9P9VbMZa/I5Hc9YMxzh8AW/hqSLjUiGKlh6Ie6d57aJUnsDPWJYzvwH7MC/7UEosRfyNUHwltIgSzFphQ868RryPvzCoEjE8IGpuu9hdHsbihEj1wyW2vnhZbKIDn2XE9fJxFQuFMo8KNZbDuRT4cPwg6vQITuFLTMBs3Q0E/22Z5TACz2KXqPU1oj8XowFvitrenAJ4Db/h70rO81L9iEjRxDQeikN4Q3fqm3Ewfcuy9zo+VP54bqc6j7hNpGp8yfcC1uOs6NPH8EwZgtXiQmi8E+LJ+Frcn5XQtwd7B/aLl0iPxNOEQof14LRaLE9kA0uJi8U1R3SeWbhcI+L3RCc7IJR9GxnxYiGmmaKMaokP8I848+K0Wydehv3KLKolXsQVSf0F7BT9eR6+StHVGk2ig23J/GcPtWGi6Meo7SM/wzVxQXTdA9/3CW4BUXOKyW9/tHQAAAAASUVORK5CYII="/>
+                <input class="input-field border-0" type="email" name="" id="" placeholder="Your Email Address"
+                  autocomplete="on" required />
+              </div>
+            </div>
+
+
+
+
+
+            <div style="margin-top: 1rem">
+              <label for="" class="d-block input-label">Password</label>
+              <div class="d-flex w-100 div-input">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABi0lEQVRIie3Uv0tVYRzH8ZfhpTIaGlpUys09IwhxEnKRLg1yI6G2lopo1qm2lGb/AweX8McipJvQv6BDQzWqRZTGhWw43xsPx1/3eM9FIT9w4Hw/z/f7fT/POc/zcErqKJjfhQe4h77wPmEZ7/GrHeAa3uEPFrEefj9G4/0V5gr0PFaTstU8Q+WA8QpeYAcTZUFrAR1sInco4GOtQrvwFc8L1LzEl6g9scbx2cGf9zBVZJN9dFTShWOajGAB9QLgetSMtAK+iY0C0IY2cKMV8BX8PAH4B662Am6bTg3cmYsv4j6uRXxddjaLaihqn0a8jXn8biTkr8x53JGdwzLVi4+oHpZQ19wNVVSDckcy/487sdsG8K7cb/3/dvU5ONVlvJGd64Z6MI2BxLsdXnfiVfEal5qdyF7S9GHE35Lx6fA+JN5KeFOJ9z28WsQDEf9T/uZKtYolrCXeLG5hJvFmkrGG3uJu9GhK6YrL1L4Vn8nNdQ4uVfldvY3hNnCGsXVUwpNI2Cv52cTjFPQXdHhZL60jtv4AAAAASUVORK5CYII="/>
+                <input class="input-field border-0" type="password" name="" id="password-content-3-5"
+                  placeholder="Your Password" minlength="6" required />
+                <div onclick="togglePassword()">
+                  <svg style="margin-left: 0.75rem; cursor: pointer" width="20" height="14" viewBox="0 0 20 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="icon-toggle" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 7C0.555556 4.66667 3.33333 0 10 0C16.6667 0 19.4444 4.66667 20 7C19.4444 9.52778 16.6667 14 10 14C3.31853 14 0.555556 9.13889 0 7ZM10 5C8.89543 5 8 5.89543 8 7C8 8.10457 8.89543 9 10 9C11.1046 9 12 8.10457 12 7C12 6.90536 11.9934 6.81226 11.9807 6.72113C12.2792 6.89828 12.6277 7 13 7C13.3608 7 13.6993 6.90447 13.9915 6.73732C13.9971 6.82415 14 6.91174 14 7C14 9.20914 12.2091 11 10 11C7.79086 11 6 9.20914 6 7C6 4.79086 7.79086 3 10 3C10.6389 3 11.2428 3.14979 11.7786 3.41618C11.305 3.78193 11 4.35535 11 5C11 5.09464 11.0066 5.18773 11.0193 5.27887C10.7208 5.10171 10.3723 5 10 5Z"
+                      fill="#CACBCE" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem">
+              <label for="" class="d-block input-label">Verification Password</label>
+              <div class="d-flex w-100 div-input">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABi0lEQVRIie3Uv0tVYRzH8ZfhpTIaGlpUys09IwhxEnKRLg1yI6G2lopo1qm2lGb/AweX8McipJvQv6BDQzWqRZTGhWw43xsPx1/3eM9FIT9w4Hw/z/f7fT/POc/zcErqKJjfhQe4h77wPmEZ7/GrHeAa3uEPFrEefj9G4/0V5gr0PFaTstU8Q+WA8QpeYAcTZUFrAR1sInco4GOtQrvwFc8L1LzEl6g9scbx2cGf9zBVZJN9dFTShWOajGAB9QLgetSMtAK+iY0C0IY2cKMV8BX8PAH4B662Am6bTg3cmYsv4j6uRXxddjaLaihqn0a8jXn8biTkr8x53JGdwzLVi4+oHpZQ19wNVVSDckcy/487sdsG8K7cb/3/dvU5ONVlvJGd64Z6MI2BxLsdXnfiVfEal5qdyF7S9GHE35Lx6fA+JN5KeFOJ9z28WsQDEf9T/uZKtYolrCXeLG5hJvFmkrGG3uJu9GhK6YrL1L4Vn8nNdQ4uVfldvY3hNnCGsXVUwpNI2Cv52cTjFPQXdHhZL60jtv4AAAAASUVORK5CYII="/>
+                <input class="input-field border-0" type="password" name="" id="password-content-3-5"
+                  placeholder="Your Password" minlength="6" required />
+                <div onclick="togglePassword()">
+                  <svg style="margin-left: 0.75rem; cursor: pointer" width="20" height="14" viewBox="0 0 20 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="icon-toggle" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 7C0.555556 4.66667 3.33333 0 10 0C16.6667 0 19.4444 4.66667 20 7C19.4444 9.52778 16.6667 14 10 14C3.31853 14 0.555556 9.13889 0 7ZM10 5C8.89543 5 8 5.89543 8 7C8 8.10457 8.89543 9 10 9C11.1046 9 12 8.10457 12 7C12 6.90536 11.9934 6.81226 11.9807 6.72113C12.2792 6.89828 12.6277 7 13 7C13.3608 7 13.6993 6.90447 13.9915 6.73732C13.9971 6.82415 14 6.91174 14 7C14 9.20914 12.2091 11 10 11C7.79086 11 6 9.20914 6 7C6 4.79086 7.79086 3 10 3C10.6389 3 11.2428 3.14979 11.7786 3.41618C11.305 3.78193 11 4.35535 11 5C11 5.09464 11.0066 5.18773 11.0193 5.27887C10.7208 5.10171 10.3723 5 10 5Z"
+                      fill="#CACBCE" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+
+            <button class="btn btn-fill text-white d-block w-100" type="submit">
+              Create Account
+            </button>
+          </form>
+
+
+          <p class="text-center bottom-caption">
+            have an account yet?
+                <a href="login.html" class="text-decoration-none">
+                <span class="green-bottom-caption">
+                    Login Here
+                </span>                    
+                </a>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password toggle -->
+    <script>
+      function togglePassword() {
+        var x = document.getElementById("password-content-3-5");
+        if (x.type === "password") {
+          x.type = "text";
+          document
+            .getElementById("icon-toggle")
+            .setAttribute("fill", "#2ec49c");
+        } else {
+          x.type = "password";
+          document
+            .getElementById("icon-toggle")
+            .setAttribute("fill", "#CACBCE");
+        }
+      }
+    </script>
+  </section> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+  </html>
