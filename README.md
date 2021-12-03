@@ -1,2 +1,2 @@
-# lamanlogin
-Ini Halaman Login yang Di buat pake htmlbuilder dengan tambahan framework bootstrap untuk griddingnya
+# Halaman Login (Project Lissa)
+Ini Halaman Login yang Di buat pake Html5 dengan tambahan framework bootstrap untuk griddingnya
